@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "compatibility": {
+    "changePoints": [
+      {
+        "fromModVersion": "2.3.0",
+        "requiredGameVersion": "0.0.60.0"
+      },
+      {
+        "fromModVersion": "2.3.1",
+        "requiredGameVersion": "0.0.61.0"
+      },
+      {
+        "fromModVersion": "2.5.3",
+        "requiredGameVersion": "0.0.62.0"
+      }
+    ]
+  },
+  "ext": {
+    
+  }
+}
