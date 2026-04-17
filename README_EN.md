@@ -15,6 +15,7 @@ After entering the game, you can enable or disable the main mod features from th
 🗺️ Map Adjustments
 - Added "Unlock All Maps" option. When disabled, only visited maps are shown.
 Note: This option is OFF by default. Players who want to see all maps must enable it manually in game settings.
+- Fixed an issue where roads and hunting fences under construction were also shown on the map.
 
 ⚙️ Anything Mod Improvements
 - Anything Mod is now enabled by default.
@@ -25,14 +26,17 @@ Note: This option is OFF by default. Players who want to see all maps must enabl
 - Added "Enable Fast Enter House" switch. When enabled, entering and leaving houses no longer requires popup confirmation.
 - Added "Card Tooltip Delay Time" configuration to prevent card number flickering. If issues occur, adjust back to 0.
 - Added "Other Mod Config" feature to show active other-mod versions and related settings.
-- Supports change detail-tooltip fonts.
+- Supports changing detail-tooltip fonts to other in-game fonts.
 - Fixed an issue where story perks could not be removed correctly.
+- Fixed an incorrect upper limit when modifying card attributes.
 
 📈 Detail Tooltip Improvements
 - Supports showing liquid change rate and change time.
 - Supports showing liquid conversion inside containers.
 - Supports showing decay speed for seasonings/coatings.
 - Supports showing follow-up changes caused by actions.
+- Supports showing attribute transfer.
+- Supports showing respawn conditions for inactive NPCs.
 
 🎖️ WikiMod Achievement Badges
 - Added a badge recycle device. If a crafted badge's quality is unsatisfactory, you can recycle and recraft it.
@@ -41,7 +45,9 @@ Note: This option is OFF by default. Players who want to see all maps must enabl
 - Added new badge rewards: Sunny Doll, Color Lights, Dimensional Box, and Muscle Statue.
 
 💡 Other Improvements
+- Supports updating Chinese translation files.
 - Fixed cases where CTRL stack move did not work.
+- Added more null checks for better stability.
 
 ## ✨ Main Features
 
@@ -105,19 +111,25 @@ A simplified nearby map is shown in the exploration interface.
 
 ### ⚙️ Anything Mod
 Press ` (the key below ESC) to activate.
-This feature is disabled by default and can be enabled from options.
 
 - Search any in-game data
 - Get any item with custom stats and enchantments
 - Modify any data on existing cards
-- View/modify any status and clear staleness
+- View/modify any status and clear staleness. Supports status locking.
 - View/modify NPC status and move NPC near player
 - Freely shift game time while keeping seasons in sync
 - Adjust global rates: blueprint research time / food spoilage speed / skill staleness / animal respawn speed / farm growth speed / garden growth speed / crop Product / garden product / map environment capacity / encounter difficulty
 - Fast build and move tools
 - Add or remove character perks after game start
 - Force complete quests
-- Speed up time animations
+- Supports speeding up time animations
+- Supports Developer Mode for viewing debug data
+- Supports not stacking cards with different names
+- Supports deleting all cards (delete buttons clickable on all cards when enabled)
+- Supports fast house entry (no enter/exit popup confirmation when enabled)
+- Supports configuring detail-tooltip delay time to avoid tooltip flickering
+- Supports showing active other-mod versions and related configurations
+- Supports changing detail-tooltip fonts
 - More experimental features can be found in More Settings
 
 ### ⚡ Quick Add Items
@@ -148,6 +160,20 @@ In blueprint/container slot UI, right-click to open menu and quickly add availab
 
 
 ## 📝 Changelog
+### V2.5.4 (2026/04/16)
+- Supports updating Chinese translation files.
+- [Map] Fixed an issue where roads and hunting fences under construction were also shown on the map.
+- [Detail Tooltip] Shows NPC respawn conditions.
+- Fixed a potential crash on the loading screen.
+
+### V2.5.2 (2026/04/16)
+- [Detail Tooltip] Shows attribute transfer.
+- [Anything Mod] Fixed an incorrect upper limit when modifying card attributes.
+- Added more null checks for better stability.
+
+### V2.5.1 (2026/04/16)
+- Compatible with game 0.62.
+
 ### V2.5 (2026/04/09)
 - Added Quick Backpack Bar. A quick backpack entry is now shown near the character carry-weight UI; hover shows equipped backpacks and click opens quickly.
 - Added remembered on-field card positions. When sorting cards by dragging, relative positions are remembered; cards prefer previous positions when placed again. (Still controlled by "Optimize Card Placement".)
