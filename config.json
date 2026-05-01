@@ -18,8 +18,8 @@
   },
   "ext": {
     "localization": {
-      "minSupportedGameVersion": "0.0.62.0",
-      "maxSupportedGameVersion": "0.0.62.9"
+      "minSupportedGameVersion": "0.0.63.0",
+      "maxSupportedGameVersion": "0.0.63.9"
     }
   }
 }
